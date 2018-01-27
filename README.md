@@ -6,4 +6,6 @@ Schema of the large DIY 7 segment digital clock as found on my youtube channel:
 
 ![alt text](https://github.com/leonvandenbeukel/7-Segment-Digital-Clock/blob/master/Schema.png)
 
+TODO: More to come...
+
 
