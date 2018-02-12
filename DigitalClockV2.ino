@@ -78,14 +78,13 @@ void loop () {
   int mr = now.minute() % 10;
 
   displayTime(0, mr);    
-  displayTime(7, ml);    
-
+  displayTime(7, ml);
   displayTime(16, hr);    
   displayTime(23, hl);    
 
   FastLED.show();
-
-  delay(400);
+  
+  delay(1000 * 29);
 }
 
 void displayTime(int startindex, int number) {
@@ -103,13 +102,9 @@ void displayTime(int startindex, int number) {
     0b01101111, // 9   
   };
 
-  LEDs[0 + startindex] = ((numbers[number] & 1) == 1) ? color : CRGB::Black;
-  LEDs[1 + startindex] = ((numbers[number] & 2) == 2) ? color : CRGB::Black;
-  LEDs[2 + startindex] = ((numbers[number] & 4) == 4) ? color : CRGB::Black;
-  LEDs[3 + startindex] = ((numbers[number] & 8) == 8) ? color : CRGB::Black;
-  LEDs[4 + startindex] = ((numbers[number] & 16) == 16) ? color : CRGB::Black;
-  LEDs[5 + startindex] = ((numbers[number] & 32) == 32) ? color : CRGB::Black;
-  LEDs[6 + startindex] = ((numbers[number] & 64) == 64) ? color : CRGB::Black;  
+  for (int i = 0; i < 7; i++) {
+    LEDs[i + startindex] = ((numbers[number] & 1 << i) == 1 << i) ? color : CRGB::Black;
+  }
 
   // Dots
   LEDs[14] = color;
