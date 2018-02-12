@@ -51,7 +51,7 @@ void setup () {
   FastLED.addLeds<WS2812B, DATA_PIN, GRB>(LEDs, NUM_LEDS);
 
   Serial.begin(9600);
-  delay(3000); // wait for console opening
+  while (!Serial) { /* Wait until serial is ready */ }
 
   if (!rtc.begin()) {
     Serial.println("Couldn't find RTC");
