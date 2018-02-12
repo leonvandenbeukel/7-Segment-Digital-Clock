@@ -83,6 +83,8 @@ void loop () {
   displayTime(16, hr);    
   displayTime(23, hl);    
 
+  FastLED.show();
+
   delay(400);
 }
 
@@ -112,7 +114,4 @@ void displayTime(int startindex, int number) {
   // Dots
   LEDs[14] = color;
   LEDs[15] = color;
-  
-  FastLED.show();
 }
-
