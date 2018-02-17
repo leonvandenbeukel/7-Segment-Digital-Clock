@@ -11,5 +11,20 @@ I hope you like it and if you made one yourself please let me know and send me s
 
 ![alt text](https://github.com/leonvandenbeukel/7-Segment-Digital-Clock/blob/master/Schema.png)
 
+### Cost for the components I've used in the YouTube video
+
+| Component                               | Cost (approx.)  | Remark    |
+| -------------                           | -----           | ---       |
+| Arduino Nano                            | € 1,50          | -         |
+| LED strip: WS2812B 1 meter 30 RGB LED's | € 2,60          | -         |
+| Real time clock: DS3231                 | € 1,00          |  -        |
+| Bluetooth module: HC-05                 | € 2,30          | optional  |
+| Temperature and Humidity Sensor: DHT11  | € 2,50          | optional  | 
+| Self adhesive decorative foil           | € 6,50          | -         |
+| Wood/MDF                                | € 5,00          | -         |
+| Wires and other small components        | € 2,00          | -         |
+| PCB                                     | € 0,50          | -         |
+| **Total**                               | €24,00          |           |
+
 
 
